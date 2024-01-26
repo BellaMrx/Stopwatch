@@ -16,7 +16,7 @@ function startTimer() {
     interval = setInterval(() => { 
       time += 1
       display.innerHTML = 
-        Math.floor(time / 3600).toString().padStart(2, "0") + ":" + Math.floor((time % 3600) / 60).toString().padStart(2, "0") + ":" + Math.floor((time % 60)).toString().padStart(2, "0") + ":" + (time).toString().padStart(3, "0")
+        Math.floor(time / 3600).toString().padStart(2, "0") + ":" + Math.floor((time % 3600) / 60).toString().padStart(2, "0") + ":" + Math.floor((time % 60)).toString().padStart(3, "0") + ":" + (time).toString().padStart(3, "0")
     });
 }
 
