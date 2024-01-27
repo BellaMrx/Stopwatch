@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color-1: #23473c;
+  --primary-color-2: #000;
+  --primary-color-3: #999;
+  --primary-color-4: #fff;
+  --primary-color-5: #15382e;
+  --primary-color-6: #ccc;
+  --primary-color-7: #666;
+}
+
+/* ------------------------------------------
+  GENERAL BASIC SETTINGS  
+    (smartphone > 640px)
+-------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color-1);
+    margin: 1em 3rem;
+}
+
+/* ------------------------------------------
+  HEADER
+-------------------------------------------*/
+header {
+    text-align: center;
+}
+header h1 {
+    font-size: 4rem;
+    color: var(--primary-color-5);
+    text-shadow: 1px 0 3px var(--primary-color-7);
+}
+.header-contact {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color-7);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.header-contact:hover {
+    color: var(--primary-color-3);     
+}
+.header-span {
+    margin-right: 10px;
+    padding-left: 5px;
+    font-size: 0.8rem;
+    color: var(--primary-color-7);
+}
+.header-span:hover {
+    color: var(--primary-color-3); 
+}
+
+/* ------------------------------------------
+  MAIN - stopwatch
+-------------------------------------------*/
+.timer {
+    text-align: center;
+    margin: 2rem auto;
+}
+#display-timer { 
+    font-size: 3rem;
+    color: var(--primary-color-6);
+    text-shadow: 1px 3px 0 var(--primary-color-7);
+}
+
+
+.timer-button {
+    text-align: center;  
+}
+
+.timer-button button {
+    margin: 10px;
+    padding: 1em;
+    background-color: var(--primary-color-5);
+    color: var(--primary-color-3);
+    border: 1px solid var(--primary-color-1);
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.timer-button button:hover {
+    box-shadow: 0 0 4px var(--primary-color-2);
+}
+
+/*-----------------------------------------------------   
+    Tablet version from 640 pixel                          
+    640px / 16px/em = 40em  
+------------------------------------------------------*/
+@media screen and (min-width: 40em) {
+    /* ------------------------------------------
+     CARD - Design
+    -------------------------------------------*/
+    body {
+      background-color: var(--primary-color-5);
+      height: 100vh;
+    }
+    .card {
+      background-color: var(--primary-color-1);
+      box-shadow: 0 4px 8px 0 #00000033;
+      transition: 0.3s;
+      width: 70%;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 1em 1rem;
+      border-radius: 4px;
+    } 
+    .card:hover {
+      box-shadow: 0 8px 16px 0 #00000033;
+    }
+    .container {
+      padding: 2px 16px;
+    }
+    .header {
+      padding-bottom: 60px;
+    }
+  }
+
+/*------------------------------------------------------------------
+    Screens from 1024 pixels                         
+    1024px / 16px/em = 64em	
+------------------------------------------------------------------- */
+@media screen and (min-width: 64em) {
+    /* ------------------------------------------
+     CARD - Design
+    -------------------------------------------*/
+    body {
+      background-color: var(--primary-color-5);
+      height: 100vh;
+    }
+    .card {
+      background-color: var(--primary-color-1);
+      box-shadow: 0 4px 8px 0 #00000033;
+      transition: 0.3s;
+      width: 60%;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 1em 1rem;
+    } 
+    .card:hover {
+      box-shadow: 0 8px 16px 0 #00000033;
+    }
+    .container {
+      padding: 2px 16px;
+    }
+    .header {
+      padding-bottom: 70px;
+    }
+  }
+
+/*------------------------------------------------------------------- 
+    Large screens (>1600 pixels) 
+    1600px / 16px/em = 100em
+-------------------------------------------------------------------- */
+@media screen and (min-width: 100em) {
+    /* ------------------------------------------
+     CARD - Design
+    -------------------------------------------*/
+    body {
+      background-color: var(--primary-color-5);
+      height: 100vh;
+    }
+    .card {
+      background-color: var(--primary-color-1);
+      box-shadow: 0 4px 8px 0 #00000033;
+      transition: 0.3s;
+      width: 50%;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 1em 1rem;
+    } 
+    .card:hover {
+      box-shadow: 0 8px 16px 0 #00000033;
+    }
+    .container {
+      padding: 2px 16px;
+    }
+    .header {
+      padding-bottom: 70px;
+    }
+  }

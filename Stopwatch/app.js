@@ -16,7 +16,7 @@ function start() {
     };
 
 
-/* 
+/*  The duration of the paused time, visible in the web browser in the console
 
     // If there was a paused duration, add it to the total stopped duration
     if (stopTimer !== null) {
@@ -63,7 +63,7 @@ function reset() {
     stopTimer = null;
 
     // Display "00:00:00.000" in the HTML document
-    document.getElementById("display-area").innerHTML = "00:00:00.000";
+    document.getElementById("display-timer").innerHTML = "00:00:00.000";
 }
 
 // Function to update the clock display
@@ -81,7 +81,7 @@ function stopWatch(){
         ms = passedTime.getUTCMilliseconds();
 
     // Display the formatted time in the HTML document
-    document.getElementById("display-area").innerHTML = 
+    document.getElementById("display-timer").innerHTML = 
         // Format hours, minutes, seconds, and milliseconds
         (hour > 9 ? hour : "0" + hour) + ":" + 
         (min > 9 ? min : "0" + min) + ":" + 

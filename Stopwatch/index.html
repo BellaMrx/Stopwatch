@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Stopwatch</title>
-        <style>
-            #display-area { font-size: 20pt; }
-        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome icons -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch - book-of-coding.com</title>
     </head>
     <body>
-        <div>
-            <output id="display-area">00:00:00.000</output>
-        </div>
-        <div>
-            <button onClick="start()">Start</button>
-            <button onClick="stop()">Stop</button>
-            <button onClick="reset()">Reset</button>
+        <div class="card">
+            <div class="container">
+                <header>
+                    <h1 title="Stopwatch"><i class="fa fa-stopwatch"></i></h1>
+                    <a href="https://github.com/BellaMrx" class="header-contact fa-brands fa-github" title="GitHub Profile"><span class="header-span">BellaMrx</span></a>
+                    <a href="https://twitter.com/bella_mrx" class="header-contact fa-brands fa-twitter" title="Twitter"><span class="header-span">@bella_mrx</span></a>
+                </header>
+                <div class="timer">
+                    <output id="display-timer">00:00:00.000</output>
+                </div>
+                <div class="timer-button">
+                    <button onClick="start()"><i class="fa fa-play" title="Play"></i></button>
+                    <button onClick="stop()"><i class="fa fa-pause" title="Pause"></i></button>
+                    <button onClick="reset()"><i class="fa fa-trash-can" title="Reset"></i></button>
+                </div>
+            </div>
         </div>
         <script src="app.js"></script>
     </body>
