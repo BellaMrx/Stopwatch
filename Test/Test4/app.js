@@ -1,18 +1,19 @@
-var timeBegan = null, 
-    timeStopped = null, 
-    stoppedDuration = 0, 
+var startTimer = null,           
+    stopTimer = null, 
+    stoppedDuration = 0,            // represents the current time in milliseconds(ms)
     started = null;
 
+// Start timer function - starts the stopwatch with start button
 function start() {
-    if (timeBegan === null) {
-        timeBegan = new Date();
+    if (startTimer === null) {
+        startTimer = new Date();
     }else {
         clearInterval(started);
     };
 
     
-    if (timeStopped !== null) {
-        stoppedDuration += (new Date() - timeStopped);
+    if (stopTimer !== null) {
+        stoppedDuration += (new Date() - stopTimer);
     };
     if (stoppedDuration < 1000){
         console.log(stoppedDuration +' ms');
@@ -25,22 +26,25 @@ function start() {
     return stoppedDuration;  
 }
 
+// Stop timer function - stops the watch with stop button
 function stop() {
-    timeStopped = new Date();
+    stopTimer = new Date();
     clearInterval(started);
 }
  
+// Reset Button - handles button click for the “Reset” button
 function reset() {
     clearInterval(started);
     stoppedDuration = 0;
-    timeBegan = null;
-    timeStopped = null;
+    startTimer = null;
+    stopTimer = null;
+    // output in HTML document
     document.getElementById("display-area").innerHTML = "00:00:00.000";
 }
 
 function clockRunning(){
     var currentTime = new Date(), 
-        timeElapsed = new Date(currentTime - timeBegan - stoppedDuration), 
+        timeElapsed = new Date(currentTime - startTimer - stoppedDuration), 
         hour = timeElapsed.getUTCHours(), 
         min = timeElapsed.getUTCMinutes(), 
         sec = timeElapsed.getUTCSeconds(), 

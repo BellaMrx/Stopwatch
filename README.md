@@ -1,5 +1,5 @@
 # Stopwatch
- Stopwatch built with HTML, CSS, JavaScript
+ accurate Stopwatch built with HTML, CSS, JavaScript
 
 
 
