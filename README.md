@@ -6,7 +6,7 @@
 
  Preview
 
- <img src="images/Preview_Stopwatch.png" width="300">
+ <img src="images/Preview_Stopwatch.png" width="400">
 
 
  Preview mobile view
