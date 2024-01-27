@@ -85,6 +85,7 @@ header h1 {
     border: 1px solid var(--primary-color-1);
     border-radius: 50%;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .timer-button button:hover {
