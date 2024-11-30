@@ -2,7 +2,7 @@
 
  accurate Stopwatch built with HTML, CSS, JavaScript
 
- Try out the Stopwatch here [book-of-coding.com](https://book-of-coding.com/build_projects.html#stopwatch)
+ Try out the Stopwatch here [LaunchFree.net](https://launchfree.net/sites/stopwatch/stopwatch.html)
 
  Preview
 
